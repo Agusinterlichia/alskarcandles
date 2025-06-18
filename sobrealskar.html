@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <title>Älskar Candles - Sobre Älskar</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <div id="logo">
+          <img src="imagenes/logo alskar.png" alt="Logo de Älskar" />
+        </div>
+      
+        <div class="search-box">
+          <input type="text" placeholder="Search" />
+        </div>
+      
+        <!-- Botón Hamburguesa -->
+        <div class="hamburger">
+          <div class="_layer -top"></div>
+          <div class="_layer -mid"></div>
+          <div class="_layer -bottom"></div>
+        </div>
+      
+        <!-- Menú horizontal (tablet y desktop) -->
+        <nav class="menu-horizontal">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobrealskar.html">Sobre Älskar</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="asesoramiento.html">Asesoramiento</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Menú hamburguesa (mobile) -->
+        <nav class="menuppal">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobrealskar.html">Sobre Älskar</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="asesoramiento.html">Asesoramiento</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Sección de imágenes con títulos superpuestos -->
+          <div class="imagen-con-texto">
+             <img src="imagenes/Historia.JPG" alt="Sobre Älskar">
+             <a href="#historia" class="texto-superpuesto">Sobre Älskar</a>
+             </div>
+
+          <div class="imagen-con-texto">
+          <img src="imagenes/enfoque_artesanal.JPG" alt="Enfoque artesanal y sostenible">
+         <a href="#enfoque" class="texto-superpuesto">Enfoque artesanal y sostenible</a>
+        </div>
+
+           <div class="imagen-con-texto">
+          <img src="imagenes/creadora.jpeg" alt="La creadora como mentora">
+          <a href="#mentora" class="texto-superpuesto">La creadora como mentora</a>
+          </div>
+
+    <section class="contenido-info">
+     <div class="bloque-texto" id="historia">
+            <h3>Historia</h3>
+            <p>
+                Älskar Candles nació de la pasión de Mariana, docente y creadora, por los productos artesanales,
+                las fragancias y el bienestar emocional. Todo comenzó como un pequeño taller donde Mariana diseñaba
+                velas y difusores con materiales naturales y fragancias que no solo adornaban, sino que mejoraban el
+                ambiente y el ánimo de las personas. Desde el principio, Älskar Candles se comprometió a ofrecer
+                calidad, creatividad y sostenibilidad. Con el tiempo, la marca creció, llevando la filosofía de
+                bienestar más allá de los productos al incluir workshops educativos, donde los participantes aprenden
+                a crear sus propias velas y difusores mientras exploran la importancia de los aromas en su entorno.
+            </p>
+        </div>
+
+        <div class="bloque-texto" id="enfoque">
+            <h3>Enfoque artesanal y sostenible</h3>
+            <p>
+                En Älskar Candles, cada vela, difusor y bruma es creado a mano, utilizando materiales sostenibles que
+                respetan tanto el medio ambiente como el bienestar de nuestros clientes. Nos enorgullece ofrecer
+                productos que no solo son estéticamente hermosos, sino que también tienen un propósito: transformar tu
+                espacio en un refugio de calma y serenidad. El uso de cera de soja natural, ingredientes puros y envases
+                reciclables son solo algunas de las decisiones que tomamos para asegurarnos de que nuestros productos
+                sean lo más amigables posible con el planeta. Además, nos esforzamos por promover una cultura de consumo
+                responsable y de respeto por lo artesanal, dándole vida a cada pieza con el toque personal de nuestras
+                manos.
+                Porque cuando enciendes una vela de Älskar Candles, dejas que la luz calme tu mente y el aroma
+                transforme tu espacio, creando momentos de paz y armonía en tu hogar.
+
+            </p>
+        </div>
+
+        <div class="bloque-texto" id="mentora">
+            <h3>La creadora como mentora</h3>
+            <p>
+                Mariana, la fundadora de Älskar Candles, no solo es una creadora de productos artesanales, sino también una mentora
+                apasionada que comparte su conocimiento con otros. Como docente, Mariana ha transformado su amor por la creación de
+                velas en un espacio de aprendizaje para todos. En sus workshops, enseña no solo la técnica de hacer velas y difusores,
+                sino también cómo crear ambientes armónicos y personalizados para cada hogar. Mariana cree firmemente en el poder de la
+                educación para empoderar a las personas y brindarles las herramientas necesarias para crear, compartir y disfrutar de
+                momentos de paz y armonía. Con cada clase, Mariana inspira a otros a conectar con su creatividad y a llevar la calma a
+                sus hogares y vidas.
+            </p>
+        </div>
+    </section>
+
+ <footer class="footer">
+      <div>
+        <img src="imagenes/env.png" alt="Envio" />
+        <p>ENVÍOS A TODO EL PAÍS</p>
+      </div>
+      <div>
+        <img src="imagenes/vela.png" alt="Descuento" />
+        <p>DCTO. EN EFEC.</p>
+      </div>
+      <div>
+        <img src="imagenes/wp.png" alt="Contacto" />
+        <p>CONTACTANOS</p>
+      </div>
+    </footer>
+
+      </footer>
+
+    <script>
+        const menu = document.querySelector('.hamburger');
+        menu.addEventListener('click', function (event) {
+          this.classList.toggle('is-active');
+          document.querySelector('.menuppal').classList.toggle('is_active');
+          event.preventDefault();
+        });
+      </script>
+</body>
+
+</html>
