@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    
+
+  
+    <title>ÄLSKAR CANDLES | INICIO</title>
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <div id="logo">
+        <img src="imagenes/logo alskar.png" alt="Logo de Älskar" />
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <!-- Botón Hamburguesa (solo visible en mobile) -->
+      <div class="hamburger">
+        <div class="_layer -top"></div>
+        <div class="_layer -mid"></div>
+        <div class="_layer -bottom"></div>
+      </div>
+
+      <!-- Menú horizontal para tablet/desktop -->
+      <nav class="menu-horizontal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobrealskar.html">Sobre Älskar</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="asesoramiento.html">Asesoramiento</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Menú hamburguesa oculto inicialmente -->
+      <nav class="menuppal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobrealskar.html">Sobre Älskar</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="asesoramiento.html">Asesoramiento</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="frase-principal">Luz que calma, fragancia que transforma.</h1>
+
+     <section class="video-inicio">
+  <video autoplay muted loop playsinline>
+    <source src="videos/video.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+</section>
+
+      <section class="main-images">
+        <img src="imagenes/index.JPG" alt="Foto manos" />
+        <img src="imagenes/inicio.JPG" alt="Foto vela MANE" />
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <img src="imagenes/env.png" alt="Envio" />
+        <p>ENVÍOS A TODO EL PAÍS</p>
+      </div>
+      <div>
+        <img src="imagenes/vela.png" alt="Descuento" />
+        <p>DCTO. EN EFEC.</p>
+      </div>
+      <div>
+        <img src="imagenes/wp.png" alt="Contacto" />
+        <p>CONTACTANOS</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript para el menú hamburguesa -->
+    <script>
+      const menuBtn = document.querySelector(".hamburger");
+      const menuMobile = document.querySelector(".menuppal");
+
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("is-active");
+        menuMobile.classList.toggle("is_active");
+      });
+    </script>
+  </body>
+</html>
