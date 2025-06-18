@@ -41,6 +41,7 @@ body {
   max-width: 90%;
   height: auto;
   display: block;
+  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(10deg) brightness(90%);
 }
 
 .search-box {
@@ -620,15 +621,15 @@ html {
 }
 
 .titulo-test-bg {
-  background-image: url("../imagenes/titulo test.JPG");
+  background-image: url("../imagenes/titulo\ test.jpg");
 }
 
 .titulo-resultados-bg {
-  background-image: url("../imagenes/titulo resultados.JPG");
+  background-image: url("../imagenes/titulo\ resultados.jpg");
 }
 
 .titulo-fragancia-bg {
-  background-image: url("../imagenes/titulo asesoramiento.JPG");
+  background-image: url("../imagenes/titulo\ asesoramiento.jpg");
 }
 
 /* Contenedor de preguntas */
