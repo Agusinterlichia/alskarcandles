@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Älskar Candles - Sobre Älskar</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+  <header class="top-bar">
+    <div id="logo">
+      <img src="imagenes/logo alskar.png" alt="Logo de Älskar" />
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search" />
+    </div>
+
+    <!-- Botón Hamburguesa -->
+    <div class="hamburger">
+      <div class="_layer -top"></div>
+      <div class="_layer -mid"></div>
+      <div class="_layer -bottom"></div>
+    </div>
+
+    <!-- Menú horizontal -->
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobrealskar.html">Sobre Älskar</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="asesoramiento.html">Asesoramiento</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menú hamburguesa (mobile) -->
+    <nav class="menuppal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobrealskar.html">Sobre Älskar</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="asesoramiento.html">Asesoramiento</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Sección visual con enlaces superpuestos -->
+<section class="imagenes-sobrealskar">
+  <h1 class="titulo-seccion">Productos</h1>
+
+  <div class="imagen-con-texto">
+    <img src="imagenes/Nuevos lanzamientos.JPG" alt="Nuevos lanzamientos">
+    <a href="#lanzamientos" class="texto-superpuesto">Nuevos lanzamientos</a>
+  </div>
+
+  <div class="imagen-con-texto">
+    <img src="imagenes/catalogo.JPG" alt="Catálogo">
+    <a href="#catalogo" class="texto-superpuesto">Catálogo</a>
+  </div>
+
+  <div class="imagen-con-texto">
+    <img src="imagenes/recomendaciones del mes.JPG" alt="Recomendaciones del mes">
+    <a href="#recomendaciones" class="texto-superpuesto">Recomendaciones del mes</a>
+  </div>
+</section>
+
+<!-- Sección de contenido real con imágenes en grid -->
+<section class="productos-seccion">
+  <div class="producto-bloque" id="lanzamientos">
+    <h3>Nuevos lanzamientos</h3>
+    <div class="galeria lanzamientos">
+      <img src="imagenes/nuevo lanzamiento.JPG" alt="Producto 1">
+      <img src="imagenes/nuevo lanzamiento (2).JPG" alt="Producto 2">
+      <img src="imagenes/nuevo lanzamiento (3).JPG" alt="Producto 3">
+      <img src="imagenes/nuevo lanzamiento (4).JPG" alt="Producto 4">
+    </div>
+  </div>
+
+  <div class="producto-bloque" id="catalogo">
+    <h3>Catálogo</h3>
+    <div class="galeria catalogo">
+      <img src="imagenes/catalogo varias.JPG" alt="Catálogo 1">
+      <img src="imagenes/catalogo varias (2).jpg" alt="Catálogo 2">
+      <img src="imagenes/catalogo varias (3).JPG" alt="Catálogo 3">
+      <img src="imagenes/catalogo varias (4).JPG" alt="Catálogo 4">
+      <img src="imagenes/catalogo varias (5).JPG" alt="Catálogo 5">
+      <img src="imagenes/catalogo varias (6).JPG" alt="Catálogo 6">
+      <img src="imagenes/catalogo varias (7).JPG" alt="Catálogo 7">
+      <img src="imagenes/catalogo varias (8).JPG" alt="Catálogo 8">
+      <img src="imagenes/catalogo varias (9).JPG" alt="Catálogo 9">
+      <img src="imagenes/catalogo 10.JPG" alt="Catálogo 10">
+       <img src="imagenes/cat.jpg" alt="Catálogo 11">
+        <img src="imagenes/catalog.jpg" alt="Catálogo 12">
+    </div>
+  </div>
+
+  <div class="producto-bloque" id="recomendaciones">
+    <h3>Recomendaciones del mes</h3>
+    <div class="galeria recomendaciones">
+      <img src="imagenes/recomendacion del mes ositos.JPG" alt="Recomendación 1">
+      <img src="imagenes/recomendacion del mes.JPG" alt="Recomendación 2">
+    </div>
+  </div>
+</section>
+
+ <footer class="footer">
+      <div>
+        <img src="imagenes/env.png" alt="Envio" />
+        <p>ENVÍOS A TODO EL PAÍS</p>
+      </div>
+      <div>
+        <img src="imagenes/vela.png" alt="Descuento" />
+        <p>DCTO. EN EFEC.</p>
+      </div>
+      <div>
+        <img src="imagenes/wp.png" alt="Contacto" />
+        <p>CONTACTANOS</p>
+      </div>
+    </footer>
+
+
+  <script>
+    const menu = document.querySelector('.hamburger');
+    if (menu) {
+      menu.addEventListener('click', function (event) {
+        this.classList.toggle('is-active');
+        document.querySelector('.menuppal').classList.toggle('is_active');
+        event.preventDefault();
+      });
+    }
+  </script>
+</body>
+
+</html>
